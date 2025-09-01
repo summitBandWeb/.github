@@ -1,3 +1,4 @@
+# .github/workflows/branch-name.yml
 name: Branch name rule
 on:
   pull_request:
@@ -11,8 +12,11 @@ jobs:
         with:
           script: |
             const name = context.payload.pull_request.head.ref;
-            const re = /^(feat|fix|refactor)\/#\d+(-[a-z0-9-]+)?$/;
+            // {아무단어}/#숫자(-옵션슬러그)
+            const re = /^[a-zA-Z0-9._-]+\/#\d+(-[a-z0-9-]+)?$/;
             if (!re.test(name)) {
-              core.setFailed(`브랜치명 규칙 위반: "${name}"
-              -> {feat|fix|refactor}/#이슈번호-슬러그 형식이어야 합니다.`);
+              core.setFailed(
+                `브랜치명 규칙 위반: "${name}"\n` +
+                `형식: {태그}/#이슈번호-슬러그`
+              );
             }
