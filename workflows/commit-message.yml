@@ -1,3 +1,4 @@
+# .github/workflows/commit-message.yml
 name: Commit message rule
 on:
   pull_request:
@@ -6,22 +7,21 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - name: Fetch commits in this PR
+      - name: Fetch commits
         uses: actions/github-script@v7
         with:
           script: |
             const pr = context.payload.pull_request;
             const { data: commits } = await github.request(pr.commits_url, { per_page: 250 });
-            const re = /^\[#\d+\];\s*(feat|fix|refactor)(\([^)]+\))?:\s+.+/;
+            const re = /^\[#\d+\];\s+.+/;
             let bad = [];
             for (const c of commits) {
-              const msg = c.commit.message.split('\n')[0]; // 제목만 검사
+              const msg = c.commit.message.split('\n')[0];
               if (!re.test(msg)) bad.push(`- ${c.sha.slice(0,7)} "${msg}"`);
             }
             if (bad.length) {
               core.setFailed(
-                `커밋 메시지 규칙 위반(첫 줄 형식):\n` +
-                `[#이슈번호]; {feat|fix|refactor}(도메인선택): 설명\n\n` +
+                `커밋 메시지 규칙 위반 (첫 줄에 [#이슈번호]; 필요):\n` +
                 bad.join('\n')
               );
             }
