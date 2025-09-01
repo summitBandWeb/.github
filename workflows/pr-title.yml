@@ -1,3 +1,4 @@
+# .github/workflows/pr-title.yml
 name: PR title rule
 on:
   pull_request:
@@ -10,11 +11,11 @@ jobs:
         with:
           script: |
             const title = context.payload.pull_request.title;
-            const re = /^\[#\d+\];\s*(feat|fix|refactor)\s*:\s+.+/;
+            const re = /^\[#\d+\];\s+.+/;
             if (!re.test(title)) {
               core.setFailed(
                 `PR 제목 규칙 위반:\n` +
-                `형식: [#이슈번호]; <feat|fix|refactor>: 설명\n` +
+                `형식: [#이슈번호]; 설명\n` +
                 `현재: "${title}"`
               );
             }
