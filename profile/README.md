@@ -28,8 +28,22 @@
 
 **"검색만 하다 지쳐요. 우린 합주에만 집중하고 싶어요!"**
 
-### 🎸 Team 픽합주
+### 🎸 Team 픽합주 
 | <img src="https://avatars.githubusercontent.com/u/154604350?v=4" width=90px alt="김난슬"/> | <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRboXHgyr3eclyJCtfoWkeEPIyxHnXpSjT7MQ&s" width=90px alt="정다연(기본이미지)"/> | <img src="https://avatars.githubusercontent.com/u/89789115?s=96&v=4" width=90px alt="손기훈"/> | <img src="https://avatars.githubusercontent.com/u/103662328?s=64&v=4" width=90px alt="김경수"/> | <img src="https://avatars.githubusercontent.com/u/96724528?s=96&v=4" width=90px alt="이성준"/> | <img src="https://github.com/user-attachments/assets/e944a02b-b4f1-43fa-81e4-6177e482c266" width=90px alt="한태영(기본이미지)"/> |
 | :-----: | :-----: | :-----: | :-----: | :-----: | :-----: |
 | [김난슬](https://github.com/seulnan) | 정다연 | [손기훈](https://github.com/S-Gihun) | [김경수](https://github.com/Siul49) | [이성준](https://github.com/szoon2426) | 한태영 |
 | **PM / PO** | **Designer** | **Frontend** | **Backend** | **Backend** | **Marketing** |
+
+
+<p align="center">
+  <a href="https://www.instagram.com/summit_ssu/" target="_blank">
+    <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/487695176_3989673721292531_3606206481869459574_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=111&_nc_oc=Q6cZ2QEJ818AnqhOC8p5JP2YPC6-nw0zfiC-k0QFhLmdRiqztqp7Eswrw0mpjs5xJIqext0&_nc_ohc=xXk2TkDxbsMQ7kNvwElmmwx&_nc_gid=ZvLc38zQRt8NNy4q7hJ8eg&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AfU9FOBoXIshsRDWihXUwa3NjGOF833Gp7pCWUVLi2cr0w&oe=68BB797F&_nc_sid=7a9f4b" width="200" alt="SUMMIT 로고"/>
+  </a>
+</p>
+
+<p align="center">
+  <strong>MADE BY SUMMIT</strong><br/>
+  <a href="https://www.instagram.com/summit_ssu/" target="_blank">
+    👉 Follow SUMMIT on Instagram 👈
+  </a>
+</p>
